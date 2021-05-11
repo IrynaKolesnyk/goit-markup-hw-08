@@ -116,6 +116,8 @@ img {
 
 .logo {
   display: inline-block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   padding-top: 16px;
   padding-bottom: 16px;
   color: #000000;
@@ -153,6 +155,7 @@ img {
 
 .menu-container {
   background-color: #ffffff;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -578,6 +581,20 @@ img {
   z-index: 5;
 }
 
+@media screen and (max-width: 1199px) {
+  .backdrop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -590,23 +607,20 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 45%;
-  left: 25%;
-  width: 450px;
-  height: 609px;
+  position: relative;
+  width: 90%;
+  min-height: 90%;
   padding: 40px;
   background-color: #ffffff;
   -webkit-animation-duration: 250ms;
           animation-duration: 250ms;
   -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transform: translate(-25%, -25%);
-          transform: translate(-25%, -25%);
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
+    position: absolute;
     width: 528px;
     height: 581px;
     top: 50%;
@@ -1222,7 +1236,14 @@ img {
 }
 
 .examples-link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1235,6 +1256,7 @@ img {
 }
 
 .examples-border {
+  height: 100%;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -1260,6 +1282,8 @@ img {
 .examples-thumb {
   position: relative;
   overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .examples-thumb__overlay {

@@ -14,6 +14,7 @@
 
 .logo {
   display: inline-block;
+  flex-shrink: 0;
   padding-top: 16px;
   padding-bottom: 16px;
   color: #000000;
@@ -49,6 +50,7 @@
 
 .menu-container {
   background-color: $primary-bg-color;
+  width: 100%;
 
   @media screen and (max-width: 767px) {
     display: none;
