@@ -6,16 +6,13 @@
 }
 
 .site-footer__content {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
   }
-
   @media screen and (min-width: $desktop) {
-    padding-top: 0;
+    margin: -15px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -26,21 +23,26 @@
   padding-bottom: 0;
 }
 
-// ----------------------------- contacts footer
+// -------------------------------------- footer contacts
 
 .footer-contacts {
+  padding-top: 60px;
   text-align: center;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: $tablet) {
     width: 50%;
   }
 
   @media screen and (min-width: $desktop) {
-    text-align: left;
+    margin: 15px;
     flex-basis: calc((50% - 45px) / 2);
-    margin-bottom: 0;
-    padding-top: 60px;
+
+    padding-bottom: 60px;
+    text-align: left;
   }
 }
 
@@ -69,21 +71,26 @@
   }
 }
 
-// --------------------------------------- join
+//join
 
 .join {
   text-align: center;
-  margin-bottom: 60px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 50%;
   }
 
-  @media screen and (min-width: $desktop) {
-    flex-basis: calc((50% - 45px) / 2);
+  @media screen and (min-width: $tablet) {
     padding-top: 72px;
-    text-align: left;
-    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 15px;
+    flex-basis: calc((50% - 45px) / 2);
   }
 }
 
@@ -110,17 +117,25 @@
   fill: $primary-bg-color;
 }
 
-// ---------------------------------- subscribe
+// -------------------------------------- subscribe
 
 .subscribe {
   text-align: center;
-  @media screen and (min-width: $tablet) {
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 100%;
   }
+
   @media screen and (min-width: $desktop) {
-    align-items: baseline;
-    padding-top: 72px;
+    margin: 15px;
     flex-basis: calc(50% - 15px);
+
+    padding-top: 72px;
+    align-items: baseline;
     text-align: left;
   }
 }
@@ -135,19 +150,37 @@
   color: $primary-bg-color;
 }
 
-// ------------------------------------ subscribe form
+// --------------------------------- subscribe content
 
-.subscribe__form {
+.subscribe-form {
   @media screen and (min-width: $desktop) {
     display: flex;
-    flex-basis: calc(50% - 15px);
   }
 }
 
-.subscribe__input {
-  width: 100%;
-  margin-bottom: 20px;
+.subscribe-form__label {
+  flex-grow: 1;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 12px;
+  }
+}
+.subscribe-form__input {
+  display: block;
+
   padding: 15px 0 15px 16px;
+  width: 100%;
 
   background-color: $dark-bg-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -162,17 +195,6 @@
     line-height: 1.25;
 
     color: rgba(255, 255, 255, 0.6);
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 50%;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 100%;
-    flex-grow: 1;
-    margin-right: 12px;
-    margin-bottom: 0px;
   }
 }
 
