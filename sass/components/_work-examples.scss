@@ -1,16 +1,31 @@
 //work examples
 
 .examples-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-
   @extend %list;
+  box-sizing: border-box;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .examples-list__item {
-  margin: 15px;
-  width: calc((100% - 90px) / 3);
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+    // max-height: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 3);
+  }
 
   background-color: $primary-bg-color;
   text-align: left;
