@@ -41,12 +41,12 @@
   .heading {
     max-width: 1600px;
     max-height: 600px;
-    background-image: url(../../images/heading/header-desktop1x.jpg);
+    background-image: url(../images/heading/header-desktop1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/heading/header-desktop2x.jpg);
+      background-image: url(../images/heading/header-desktop2x.jpg);
     }
   }
 }
