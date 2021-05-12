@@ -31,7 +31,7 @@
                     <nav class="site-nav">
                         <ul class="nav-list list">
                             <li class="nav-list__item">
-                                <a href="./index.html" class="site-nav__link ">Студия</a>
+                                <a href="./index.html" class="site-nav__link">Студия</a>
                             </li>
                             <li class="nav-list__item">
                                 <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
@@ -88,11 +88,18 @@
                     </ul>
         
                     <ul class="examples-list list">
-        
                         <li class="examples-list__item">
                             <a class="examples-link" href="" target="_blank">
                                 <div class="examples-thumb">
-                                    <img src="./images/portfolio/1technocrack.jpg" alt="technocrack" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio/technocrack-desktop-1x.jpg 1x, 
+                                            ./images/portfolio/technocrack-desktop-2x.jpg 2x" media="(min-width: 1200px)">
+                                        <source srcset="./images/portfolio/technocrack-tablet-1x.jpg 1x,
+                                            ./images/portfolio/technocrack-tablet-2x.jpg 2x," media="(min-width: 768px)">
+                                        <source srcset="./images/portfolio/technocrack-phone-1x.jpg 1x,
+                                            ./images/portfolio/technocrack-phone-2x.jpg 2x" media="(max-width: 767px)">
+                                        <img src="./images/portfolio/technocrack-desktop-1x.jpg" alt="technocrack">
+                                    </picture>
                                     <div class="examples-thumb__overlay">
                                         <p class="examples-thumb__text">Технокряк это современная площадка распространения
                                             коронавируса. Компании
@@ -113,8 +120,21 @@
                         <li class="examples-list__item">
                             <a class="examples-link" href="" target="_blank">
                                 <div class="examples-thumb">
-                                    <img src="./images/portfolio/2neworleanvsgoldenstar.jpg" alt="neworleanvsgoldenstar"
-                                        width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio/neworleanvsgoldenstar-desktop-1x.jpg 1x, 
+                                            ./images/portfolio/neworleanvsgoldenstar-desktop-2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                        >
+                                        <source srcset="./images/portfolio/neworleanvsgoldenstar-tablet-1x.jpg 1x,
+                                            ./images/portfolio/neworleanvsgoldenstar-tablet-2x.jpg 2x,"
+                                            media="(min-width: 768px)"
+                                        >
+                                        <source srcset="./images/portfolio/neworleanvsgoldenstar-phone-1x.jpg 1x,
+                                            ./images/portfolio/neworleanvsgoldenstar-phone-2x.jpg 2x" 
+                                            media="(max-width: 767px)"
+                                        >
+                                        <img src="./images/portfolio/neworleanvsgoldenstar-desktop-1x.jpg" alt="neworleanvsgoldenstar">
+                                    </picture>
                                     <div class="examples-thumb__overlay">
                                         <p class="examples-thumb__text">Технокряк это современная площадка распространения
                                             коронавируса. Компании
@@ -134,8 +154,22 @@
                         <li class="examples-list__item">
                             <a class="examples-link" href="" target="_blank">
                                 <div class="examples-thumb">
-                                    <img src="./images/portfolio/3seafood.jpg" alt="restaurantseafood" width="370" height="294"
-                                        class="work-examples-image">
+                                    <picture>
+                                        <source srcset="./images/portfolio/seafood-desktop-1x.jpg 1x, 
+                                            ./images/portfolio/seafood-desktop-2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                        >
+                                        <source srcset="./images/portfolio/seafood-tablet-1x.jpg 1x,
+                                            ./images/portfolio/seafood-tablet-2x.jpg 2x,"
+                                            media="(min-width: 768px)"
+                                        >
+                                        <source srcset="./images/portfolio/seafood-phone-1x.jpg 1x,
+                                            ./images/portfolio/seafood-phone-2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                        >
+                                        <img class="work-examples-image" src="./images/portfolio/seafood-desktop-1x.jpg" alt="restaurantseafood">
+                                    </picture>
+                                    
                                     <div class="examples-thumb__overlay">
                                         <p class="examples-thumb__text">Технокряк это современная площадка распространения
                                             коронавируса. Компании
@@ -155,7 +189,21 @@
                         <li class="examples-list__item">
                             <a class="examples-link" href="" target="_blank">
                                 <div class="examples-thumb">
-                                    <img src="./images/portfolio/4prime.jpg" alt="headphonesprime" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio/headphones-desktop-1x.jpg 1x, 
+                                            ./images/portfolio/headphones-desktop-2x.jpg 2x" 
+                                            media="(min-width: 1200px)"
+                                        >
+                                        <source srcset="./images/portfolio/headphones-tablet-1x.jpg 1x,
+                                            ./images/portfolio/headphones-tablet-2x.jpg 2x," 
+                                            media="(min-width: 768px)"
+                                        >
+                                        <source srcset="./images/portfolio/headphones-phone-1x.jpg 1x,
+                                            ./images/portfolio/headphones-phone-2x.jpg 2x" 
+                                            media="(max-width: 767px)"
+                                        >
+                                        <img src="./images/portfolio/headphones-desktop-1x.jpg" alt="headphonesprime">
+                                    </picture>
                                     <div class="examples-thumb__overlay">
                                         <p class="examples-thumb__text">Технокряк это современная площадка распространения
                                             коронавируса. Компании
@@ -175,7 +223,22 @@
                         <li class="examples-list__item">
                             <a class="examples-link" href="" target="_blank">
                                 <div class="examples-thumb">
-                                    <img src="./images/portfolio/5boxes.jpg" alt="boxes" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio/two-boxes-desktop-1x.jpg 1x, 
+                                            ./images/portfolio/two-boxes-desktop-2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                        >
+                                        <source srcset="./images/portfolio/two-boxes-tablet-1x.jpg 1x,
+                                            ./images/portfolio/two-boxes-tablet-2x.jpg 2x,"
+                                            media="(min-width: 768px)"
+                                        >
+                                        <source srcset="./images/portfolio/two-boxes-phone-1x.jpg 1x,
+                                            ./images/portfolio/two-boxes-phone-2x.jpg 2x" 
+                                            media="(max-width: 767px)"
+                                        >
+                                        <img src="./images/portfolio/two-boxes-desktop-1x.jpg" alt="boxes">
+                                    </picture>
+                                    
                                     <div class="examples-thumb__overlay">
                                         <p class="examples-thumb__text">Технокряк это современная площадка распространения
                                             коронавируса. Компании
@@ -195,8 +258,22 @@
                         <li class="examples-list__item">
                             <a class="examples-link" href="" target="_blank">
                                 <div class="examples-thumb">
-                                    <img src="./images/portfolio/6inspirationhasnoborders.jpg" alt="inspirationhasnoborders"
-                                        width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio/inspirationhasnoborders-desktop-1x.jpg 1x, 
+                                            ./images/portfolio/inspirationhasnoborders-desktop-2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                        >
+                                        <source srcset="./images/portfolio/inspirationhasnoborders-tablet-1x.jpg 1x,
+                                            ./images/portfolio/inspirationhasnoborders-tablet-2x.jpg 2x," 
+                                            media="(min-width: 768px)"
+                                        >
+                                        <source srcset="./images/portfolio/inspirationhasnoborders-phone-1x.jpg 1x,
+                                            ./images/portfolio/inspirationhasnoborders-phone-2x.jpg 2x" 
+                                            media="(max-width: 767px)"
+                                        >
+                                        <img src="./images/portfolio/inspirationhasnoborders-desktop-1x.jpg" alt="inspirationhasnoborders">
+                                    </picture>
+                                    
                                     <div class="examples-thumb__overlay">
                                         <p class="examples-thumb__text">Технокряк это современная площадка распространения
                                             коронавируса. Компании
@@ -216,8 +293,22 @@
                         <li class="examples-list__item">
                             <a class="examples-link" href="" target="_blank">
                                 <div class="examples-thumb">
-                                    <img src="./images/portfolio/7limitededition.jpg" alt="limitededition" width="370"
-                                        height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio/limitededition-desktop-1x.jpg 1x, 
+                                            ./images/portfolio/limitededition-desktop-2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                        >
+                                        <source srcset="./images/portfolio/limitededition-tablet-1x.jpg 1x,
+                                            ./images/portfolio/limitededition-tablet-2x.jpg 2x,"
+                                            media="(min-width: 768px)"
+                                        >
+                                        <source srcset="./images/portfolio/limitededition-phone-1x.jpg 1x,
+                                            ./images/portfolio/limitededition-phone-2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                        >
+                                        <img src="./images/portfolio/limitededition-desktop-1x.jpg" alt="limitededition">
+                                    </picture>
+                                    
                                     <div class="examples-thumb__overlay">
                                         <p class="examples-thumb__text">Технокряк это современная площадка распространения
                                             коронавируса. Компании
@@ -237,8 +328,19 @@
                         <li class="examples-list__item">
                             <a class="examples-link" href="" target="_blank">
                                 <div class="examples-thumb">
-                                    <img src="./images/portfolio/8lab.jpg" alt="labeltag" width="370" height="294"
-                                        class="work-examples-image">
+                                    <picture>
+                                        <source srcset="./images/portfolio/labeltag-desktop-1x.jpg 1x, 
+                                            ./images/portfolio/labeltag-desktop-2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source srcset="./images/portfolio/labeltag-tablet-1x.jpg 1x,
+                                            ./images/portfolio/labeltag-tablet-2x.jpg 2x,"
+                                            media="(min-width: 768px)">
+                                        <source srcset="./images/portfolio/labeltag-phone-1x.jpg 1x,
+                                            ./images/portfolio/labeltag-phone-2x.jpg 2x"
+                                            media="(max-width: 767px)">
+                                        <img src="./images/portfolio/labeltag-desktop-1x.jpg" alt="labeltag">
+                                    </picture>
+                                    
                                     <div class="examples-thumb__overlay">
                                         <p class="examples-thumb__text">Технокряк это современная площадка распространения
                                             коронавируса. Компании
@@ -258,8 +360,22 @@
                         <li class="examples-list__item">
                             <a class="examples-link" href="" target="_blank">
                                 <div class="examples-thumb">
-                                    <img src="./images/portfolio/9growingbusiness.jpg" alt="growingbusiness" width="370"
-                                        height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio/growingbusiness-desktop-1x.jpg 1x, 
+                                            ./images/portfolio/growingbusiness-desktop-2x.jpg 2x" 
+                                            media="(min-width: 1200px)"
+                                        >
+                                        <source srcset="./images/portfolio/growingbusiness-tablet-1x.jpg 1x,
+                                            ./images/portfolio/growingbusiness-tablet-2x.jpg 2x," 
+                                            media="(min-width: 768px)"
+                                        >
+                                        <source srcset="./images/portfolio/growingbusiness-phone-1x.jpg 1x,
+                                            ./images/portfolio/growingbusiness-phone-2x.jpg 2x" 
+                                            media="(max-width: 767px)"
+                                        >
+                                        <img src="./images/portfolio/growingbusiness-desktop-1x.jpg" alt="growingbusiness">
+                                    </picture>
+                                    
                                     <div class="examples-thumb__overlay">
                                         <p class="examples-thumb__text">Технокряк это современная площадка распространения
                                             коронавируса. Компании
