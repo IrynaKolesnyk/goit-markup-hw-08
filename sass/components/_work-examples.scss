@@ -1,7 +1,6 @@
 //work examples
 
 .examples-list {
-  @extend %list;
   box-sizing: border-box;
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -20,7 +19,6 @@
   @media screen and (min-width: $tablet) {
     margin: 15px;
     width: calc((100% - 60px) / 2);
-    // max-height: 354px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -32,7 +30,6 @@
 }
 
 .examples-link {
-  // display: block;
   display: flex;
   flex-direction: column;
   height: 100%;

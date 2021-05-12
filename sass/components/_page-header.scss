@@ -131,7 +131,6 @@
 }
 
 .nav-list {
-  @extend %list;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -210,8 +209,6 @@
     flex-direction: row-reverse;
     align-items: center;
   }
-
-  @extend %list;
 }
 
 .header-contacts__item-phone {
@@ -294,7 +291,6 @@
 
 .social-menu {
   display: flex;
-  @extend %list;
 
   @media screen and (min-width: $tablet) {
     display: none;

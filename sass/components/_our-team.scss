@@ -5,12 +5,7 @@
   text-align: center;
 }
 
-.team__title {
-  @extend %title;
-}
-
 .team-list {
-  @extend %list;
   @media screen and (min-width: $tablet) {
     margin: -15px;
     padding-left: 0;
@@ -60,8 +55,6 @@
 
 .social-list {
   display: inline-flex;
-
-  @extend %list;
 }
 
 .social-list__item:not(:last-child) {

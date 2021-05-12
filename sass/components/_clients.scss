@@ -1,11 +1,6 @@
 //clients
 
-.clients__title {
-  @extend %title;
-}
-
 .clients-list {
-  @extend %list;
   display: flex;
   flex-wrap: wrap;
   margin: -15px;

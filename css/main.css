@@ -78,7 +78,7 @@ img {
   }
 }
 
-.what-do__title, .team__title, .clients__title {
+.title {
   margin-bottom: 30px;
   font-size: 28px;
   text-align: center;
@@ -87,13 +87,13 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .what-do__title, .team__title, .clients__title {
+  .title {
     margin-bottom: 50px;
     font-size: 36px;
   }
 }
 
-.nav-list, .header-contacts, .social-menu, .features-list, .what-do__list, .team-list, .social-list, .clients-list, .filter-list, .examples-list, .footer-contacts__list {
+.list {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
