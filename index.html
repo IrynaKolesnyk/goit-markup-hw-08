@@ -196,17 +196,53 @@
 
                         <li class="what-do__item">
                             <h3 class="what-do__item__action-text">Десктопные приложения</h3>
-                            <img srcset="./images/what-do/tablet1x.jpg 1x, ./images/what-do/tablet2x.jpg 2x" src="./images/what-do/tablet1x.jpg" alt="планшет" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/what-do/webp/tablet1x.webp 1x, 
+                                    ./images/what-do/webp/tablet2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                >
+                                <source srcset="./images/what-do/tablet1x.jpg 1x,
+                                    ./images/what-do/tablet2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                >
+                                <img src="./images/what-do/tablet1x.jpg" alt="планшет"> 
+                            </picture>  
                         </li>
 
                         <li class="what-do__item">
                             <h3 class="what-do__item__action-text">Мобильные приложения</h3>
-                            <img srcset="./images/what-do/phone1x.jpg 1x, ./images/what-do/phone2x.jpg 2x" src="./images/what-do/phone1x.jpg" alt="телефон" width="370" height="294"> 
+                            <picture>
+                                <source srcset="
+                                    ./images/what-do/webp/phone1x.webp 1x, 
+                                    ./images/what-do/webp/phone2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                >
+                                <source srcset="./images/what-do/phone1x.jpg 1x,
+                                    ./images/what-do/phone2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                >
+                                <img src="./images/what-do/phone1x.jpg" alt="телефон">
+                            </picture>
+                             
                         </li>
 
                         <li class="what-do__item">
                             <h3 class="what-do__item__action-text">Дизайнерские решения</h3>
-                            <img srcset="./images/what-do/drawing-tablet1x.jpg 1x, ./images/what-do/drawing-tablet2x.jpg 2x" src="./images/what-do/drawing-tablet1x.jpg" alt="планшет для рисования" width="370" height="294">
+                            <picture>
+                                <source srcset="
+                                    ./images/what-do/webp/drawing-tablet1x.webp 1x, 
+                                    ./images/what-do/webp/drawing-tablet2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                <source srcset="
+                                    ./images/what-do/drawing-tablet1x.jpg 1x,
+                                    ./images/what-do/drawing-tablet2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                >
+                                <img src="./images/what-do/drawing-tablet1x.jpg" alt="планшет для рисования">
+                            </picture>  
                         </li>
                     </ul>
                 </div>
@@ -220,16 +256,16 @@
                             <picture>
                                 <source srcset="./images/team/product-designer-desktop-1x.jpg 1x, 
                                     ./images/team/product-designer-desktop-2x.jpg 2x" 
-                                    media="(min-width: 1200px)">
-                                
+                                    media="(min-width: 1200px)"
+                                >
                                 <source srcset="./images/team/product-designer-tablet-1x.jpg 1x,
                                     ./images/team/product-designer-tablet-2x.jpg 2x" 
                                     media="(min-width: 768px)"
                                 >
                                 <source srcset="./images/team/product-designer-phone-1x.jpg 1x,
                                     ./images/team/product-designer-phone-2x.jpg 2x" 
-                                    media="(max-width: 767px)">
-                                
+                                    media="(max-width: 767px)"
+                                >
                                 <img src="./images/team/product-designer-desktop-1x.jpg" alt="дизайнер">
                             </picture>
                             
