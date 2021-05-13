@@ -290,14 +290,12 @@ img {
 }
 
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50% -50%);
-          transform: translate(-50% -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .modal {
   position: relative;
-  width: 90%;
-  min-height: 90%;
   padding: 40px;
   background-color: #ffffff;
   -webkit-animation-duration: 250ms;
@@ -683,7 +681,7 @@ img {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1;
+  margin: -1px;
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
@@ -709,8 +707,8 @@ img {
   display: inline-block;
   vertical-align: middle;
   margin-right: 7px;
-  width: 16;
-  height: 15;
+  width: 16px;
+  height: 15px;
 }
 
 .send-button {
@@ -1611,7 +1609,7 @@ img {
 
 .examples-thumb__text {
   position: absolute;
-  top: 63px;
+  top: 30px;
   left: 24px;
   right: 24px;
   opacity: 0;
@@ -1626,5 +1624,11 @@ img {
 .examples-link:hover .examples-thumb__text,
 .examples-link:focus .examples-thumb__text {
   opacity: 1;
+}
+
+@media screen and (min-width: 480px) {
+  .examples-thumb__text {
+    top: 63px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

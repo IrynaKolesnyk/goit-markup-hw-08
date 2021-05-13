@@ -99,7 +99,7 @@
 
 .examples-thumb__text {
   position: absolute;
-  top: 63px;
+  top: 30px;
   left: 24px;
   right: 24px;
   opacity: 0;
@@ -115,5 +115,9 @@
   .examples-link:hover &,
   .examples-link:focus & {
     opacity: 1;
+  }
+
+  @media screen and (min-width: 480px) {
+    top: 63px;
   }
 }
