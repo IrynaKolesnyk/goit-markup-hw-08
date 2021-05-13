@@ -43,11 +43,14 @@
 
 .site-nav__link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $title-color;
 
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+  }
   @media screen and (min-width: $tablet) {
     position: relative;
     display: block;
